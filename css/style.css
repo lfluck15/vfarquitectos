@@ -60,6 +60,14 @@ time, mark, audio, video {
   margin-left: 100px;
   padding: 50px 0 100px 0; }
 
+.rownarrow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 100px; }
+
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -94,11 +102,12 @@ time, mark, audio, video {
   align-content: center; }
 
 .containerservicios {
-  padding: 0 300px 0 300px; }
+  margin: auto;
+  width: 50%;
+  padding: 10px; }
 
 .containercolor {
   background-color: #A4B801;
-  min-width: 992px !important;
   color: #fefefe;
   height: 300px; }
 

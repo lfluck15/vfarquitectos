@@ -21,6 +21,7 @@ time, mark, audio, video {
 
 
 $ancho : 1050px;
+$primary: #A4B801;
 
 
 .navbar {
@@ -70,6 +71,15 @@ $ancho : 1050px;
   padding: 50px 0 100px 0;
 }
 
+.rownarrow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 100px;
+  }
+
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -96,7 +106,7 @@ $ancho : 1050px;
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
-  color: #A4B801;
+  color: $primary;
   font-style: normal;
   font-family: 'Lusitana', serif;
   text-align:center;
@@ -109,12 +119,13 @@ $ancho : 1050px;
   }
 
  .containerservicios {
-    padding:0 300px 0 300px;
+ margin: auto;
+  width: 50%;
+  padding: 10px;
   }
 
 .containercolor {
-  background-color: #A4B801;
-  min-width: 992px !important;
+  background-color: $primary;
   color: #fefefe;
   height: 300px;
   }
@@ -129,7 +140,7 @@ $ancho : 1050px;
   z-index: 10;
   padding-top: 10px;
   padding-bottom: 20px;
-  color: #A4B801;
+  color: $primary;
   text-align: center;
 }
 
