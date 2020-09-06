@@ -1,6 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -17,6 +16,13 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
+
+a {
+  color: white; }
+
+a:hover {
+  color: white;
+  text-decoration: underline; }
 
 .navbar {
   z-index: 9999;
@@ -42,14 +48,14 @@ time, mark, audio, video {
   position: relative;
   display: none;
   float: left;
-  height: 725px;
+  height: auto;
   width: 100%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
 
 .row {
   display: -ms-flexbox;
@@ -64,9 +70,7 @@ time, mark, audio, video {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: 100px;
-  margin-left: 100px; }
+  flex-wrap: wrap; }
 
 .card {
   position: relative;
@@ -82,7 +86,8 @@ time, mark, audio, video {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin: auto; }
 
 .card-text {
   padding-bottom: 20px; }
@@ -109,7 +114,13 @@ time, mark, audio, video {
 .containercolor {
   background-color: #A4B801;
   color: #fefefe;
-  height: 300px; }
+  height: auto;
+  margin-top: 100px; }
+
+.containercolorproyectos {
+  background-color: #A4B801;
+  color: #fefefe;
+  height: auto; }
 
 .carousel-caption {
   position: absolute;
@@ -129,8 +140,22 @@ time, mark, audio, video {
   text-align: center;
   padding-top: 150px; }
 
+.imgreview {
+  height: auto;
+  width: 10%;
+  padding-top: 25px; }
+
+.review {
+  font-style: normal;
+  font-family: 'Lusitana', serif;
+  text-align: center;
+  margin: 0 150px; }
+
 img {
   max-width: 100%; }
+
+.imggallery {
+  height: 100%; }
 
 .gallery_box li {
   width: 33.333333%;
@@ -167,7 +192,7 @@ img {
   background: rgba(0, 0, 0, 0.17); }
 
 .gallery_box li:nth-child(even) .box_data {
-  background: rgba(0, 44, 255, 0.27); }
+  background: rgba(48, 73, 92, 0.27); }
 
 .gallery_box .box_data {
   position: absolute;
@@ -186,7 +211,13 @@ img {
   font-size: 24px; }
 
 .gallery_box li:hover .box_data {
-  background: #A4B801; }
+  background: #A4B801;
+  opacity: 0.5; }
+
+.gallery_box li:hover .box_data span {
+  background: #A4B801;
+  opacity: 0.5;
+  display: none; }
 
 .box1 {
   width: 1050px; }

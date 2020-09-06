@@ -1,6 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -20,9 +19,17 @@ time, mark, audio, video {
 }
 
 
-$ancho : 1050px;
+$ancho: 1050px;
 $primary: #A4B801;
 
+a {
+    color: white;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
 
 .navbar {
   z-index: 9999;
@@ -51,15 +58,16 @@ $primary: #A4B801;
   position: relative;
   display: none;
   float: left;
-  height: 725px;
+  height: auto;
   width: 100%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
+
 
 .row {
   display: -ms-flexbox;
@@ -76,8 +84,6 @@ $primary: #A4B801;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: 100px;
-  margin-left: 100px;
   }
 
 .card {
@@ -95,6 +101,7 @@ $primary: #A4B801;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   padding-bottom: 20px;
+  margin: auto;
 }
 
 .card-text {
@@ -127,9 +134,15 @@ $primary: #A4B801;
 .containercolor {
   background-color: $primary;
   color: #fefefe;
-  height: 300px;
+  height: auto;
+  margin-top: 100px;
   }
 
+.containercolorproyectos {
+  background-color: $primary;
+  color: #fefefe;
+  height: auto;
+  }
 
   
   .carousel-caption {
@@ -153,8 +166,24 @@ $primary: #A4B801;
 }
 
 
+.imgreview {
+  height: auto;
+    width: 10%;
+    padding-top: 25px;
+}
+
+.review {
+  font-style: normal;
+  font-family: 'Lusitana', serif;
+  text-align:center;
+  margin: 0 150px;
+}
 
 img{ max-width:100%;}
+
+.imggallery {
+  height: 100%;
+}
 
 .gallery_box li{ 
 width:33.333333%; 
@@ -192,7 +221,7 @@ display: flow-root;
 background:rgba(0,0,0,0.17) 
 }
 .gallery_box li:nth-child(even) .box_data{ 
-background:rgba(0,44,255,0.27) 
+background:rgba(48,73,92,0.27) 
 }
 .gallery_box .box_data{
  position:absolute; 
@@ -215,6 +244,13 @@ font-size:24px;
 
 .gallery_box li:hover .box_data{
  background:#A4B801;
+ opacity: 0.5;
+ }
+
+.gallery_box li:hover .box_data span{
+ background:#A4B801;
+ opacity: 0.5;
+ display: none;
  }
 
 .box1 {
