@@ -5,7 +5,7 @@ small, strike, strong, sub, sup, tt, var,
 b, i, center,
 dl, dt, dd, ol,
 fieldset, form, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, caption, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -24,11 +24,30 @@ a:hover {
   color: white;
   text-decoration: underline; }
 
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+
 .navbar {
   z-index: 9999;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  padding: auto;
+ }
+
+ .textnav {
+  width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+ }
 
 .jumbotron {
   padding: 2rem 1rem;
@@ -57,6 +76,7 @@ a:hover {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
 
+/*
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +85,7 @@ a:hover {
   margin-right: 100px;
   margin-left: 100px;
   padding: 50px 0 100px 0; }
+*/
 
 .rownarrow {
   display: -ms-flexbox;
@@ -89,8 +110,17 @@ a:hover {
   padding-bottom: 20px;
   margin: auto; }
 
+
+.card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Lusitana', serif;
+  text-align: center;}
+
 .card-text {
-  padding-bottom: 20px; }
+  padding-bottom: 20px; 
+  font-family: 'Raleway', sans-serif;
+  text-align: center;}
 
 .display-4 {
   font-size: 3.5rem;
@@ -108,19 +138,26 @@ a:hover {
 
 .containerservicios {
   margin: auto;
+  padding-top: 50px;
   width: 50%;
-  padding: 10px; }
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+   }
 
 .containercolor {
   background-color: #A4B801;
   color: #fefefe;
   height: auto;
-  margin-top: 100px; }
+  padding: 50px;
+  margin-top: 100px;
+  width: auto; }
 
 .containercolorproyectos {
   background-color: #A4B801;
   color: #fefefe;
-  height: auto; }
+  height: auto;
+  padding: 50px;
+  width: auto; }
 
 .carousel-caption {
   position: absolute;
@@ -167,8 +204,8 @@ img {
   position: relative; }
 
 .gallery_box {
-  padding: 100px 0 50px 0;
-  display: flow-root; }
+  /*padding: 100px 0 50px 0;*/
+  display: flow-root;}
 
 .gallery_box li:hover img {
   -moz-transform: scale(1.1);
@@ -219,11 +256,15 @@ img {
   opacity: 0.5;
   display: none; }
 
+.nose{
+    position: relative;
+    top: -134px;}
+
 .box1 {
   width: 1050px; }
 
 .box2 {
-  width: 525px; }
+  padding-right: 150px; }
 
 .containercontacto {
   padding: 0 300px 0 300px; }
@@ -233,3 +274,56 @@ img {
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   text-align: left; }
+
+@media (max-width: 700px) {
+.lead {
+  font-size: 0.85rem;
+  margin-top: 20px;}
+
+.display-4 {
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 25px; }
+
+.containerservicios {
+   margin: 35px 35px 10px 35px;
+   width: auto;
+   padding: 10px;}
+
+.gallery_box {
+    padding: 20px 0 25px 0;}
+
+.lead2 {
+  font-size: 1rem;
+  padding-top: 70px;}
+
+.review {
+  margin: 0 40px}
+
+.imgreview {
+width: 35%;}
+
+.gallery_box li {
+  width: 100%;}
+
+.gallery_box li:nth-child(even) {
+   height: 204px; }
+  
+.gallery_box li:nth-child(odd) {
+    height: 238px; }
+
+.nose{
+      top:0}
+
+.imggallery {
+      width: 100%;}
+ 
+.box2 {
+      width: auto }}
+
+
+@media (max-width: 300px) {
+    #footer {display: none;}
+    .textnav {
+  width: 25%;
+ }}
